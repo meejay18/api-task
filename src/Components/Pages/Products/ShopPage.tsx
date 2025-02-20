@@ -14,7 +14,15 @@ const ShopPage = () => {
     });
   };
 
-  const filteredProducts = function () {};
+  const filteredProducts = products.filter((product: any) => {
+    const lowerCase = search.toLowerCase();
+    return (
+      product.title.toLowerCase().includes(lowerCase) ||
+      product.category.toLowerCase().includes(lowerCase) ||
+      product.description.toLowerCase().includes(lowerCase) ||
+      product.price.toString().includes(lowerCase)
+    );
+  });
 
   useEffect(() => {
     handlegetAllProducts2();
@@ -33,44 +41,48 @@ const ShopPage = () => {
           />
         </div>
         <div className="grid grid-cols-1 gap-[100px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {products.length > 0 ? (
-            products.map((el: any) => {
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((el: any) => {
               console.log("reading products", el.data);
 
               return (
                 <div
                   key={el.id}
-                  className="min-h-[400px] bg-white p-2  rounded-[20px] shadow-sm outline-none"
+                  className="min-h-[500px] bg-white p-2  rounded-[20px] shadow-sm outline-none"
                 >
-                  <div className="w-[full] h-[50%]  outline-none flex justify-center items-center ">
+                  <div className="w-[full] h-[40%]  outline-none flex justify-center items-center ">
                     <img
                       className="w-[200px] h-[100px]  object-contain"
                       src={el.image || pic}
                       alt="picture"
                     />
                   </div>
-                  <div className="w-[full] h-[25px] flex gap-1">
+                  <div className="w-[full] h-[30px] flex gap-1">
                     <span className="text-[15px] font-medium">Name:</span>
-                    <p className="text-[15px]">Essence Mascara Lash Princess</p>
+                    <p className="text-[13px]">{el.title.slice(0, 50)}</p>
                   </div>
 
                   <div className="w-[full] h-[25px] flex items-center gap-1">
                     <span className="text-[15px] font-medium">Category:</span>{" "}
-                    <p className="text-[15px]">beauty</p>
+                    <p className="text-[13px]">{el.category}</p>
                   </div>
                   <div className="w-[full] h-[25px] flex items-center gap-1">
                     <span className="text-[15px] font-medium">Price:</span>{" "}
-                    <p className="text-[15px] text-[red]">$9.99</p>
+                    <p className="text-[13px] text-[red]">${el.price}</p>
                   </div>
                   <div className="w-[full] h-[25px] flex items-center gap-1">
-                    <span className="text-[15px] font-medium">Brand:</span>{" "}
-                    <p className="text-[15px]">Essence</p>
+                    <span className="text-[15px] font-medium">Rating:</span>{" "}
+                    <p className="text-[13px]">{el.rating.rate}</p>
                   </div>
-                  <div className="w-[full] h-[25px] flex items-center gap-1">
-                    <span className="text-[15px] font-medium">Stock:</span>{" "}
-                    <p className="text-[15px]">5</p>
+                  <div className="w-[full] h-[70px]  items-center gap-1">
+                    <span className="text-[15px] font-medium">
+                      Description:
+                    </span>{" "}
+                    <p className="text-[13px]">
+                      {el.description.slice(0, 200)}
+                    </p>
                   </div>
-                  <div className="w-full h-[40px] flex justify-center items-center mt-2">
+                  <div className="w-full h-[40px] mt-[60px] flex justify-center items-center ">
                     <button className="py-2 text-[15px] text-[white] px-2 bg-blue-700 hover:bg-blue-500 cursor-pointer rounded-[10px]">
                       Add to cart
                     </button>
