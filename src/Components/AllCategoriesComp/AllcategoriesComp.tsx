@@ -1,7 +1,9 @@
-const AllCatComp = function (props: any) {
+const AllCatComp = function ({ props }: any) {
   return (
     <div>
-      <div className="w-[60px] h-[80px] bg-[#80003a]">{}</div>
+      <div className="w-[100%] h-[5px] bg-[#80003a]">
+        {props?.catObj?.title}
+      </div>
     </div>
   );
 };

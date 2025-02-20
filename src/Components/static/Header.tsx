@@ -5,27 +5,29 @@ import { IoBagOutline } from "react-icons/io5";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { BiPhoneCall } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const Nav = [
     {
       id: "1",
       title: "Home",
+      url: "/",
     },
     {
       id: "2",
       title: "About Us",
-      url: "",
+      url: "/about",
     },
     {
       id: "3",
-      title: "Pages",
-      url: "",
+      title: "Products",
+      url: "/products",
     },
     {
       id: "4",
-      title: "Shop",
-      url: "",
+      title: "shop",
+      url: "/shop",
     },
     {
       id: "5",
@@ -86,9 +88,11 @@ const Header = () => {
               BROWSE ALL CATEGORIES
             </p>
           </div>
-          <div className="w-[40%] h-full  flex text-[15px] font-medium pl-[40px]  text-gray-800 items-center gap-[30px]">
+          <div className="w-[45%] h-full  flex text-[15px] font-medium pl-[40px]  text-gray-800 items-center gap-[30px]">
             {Nav.map((el) => (
-              <div>{el.title}</div>
+              <div key={el.id}>
+                <Link to={el.url}>{el.title}</Link>
+              </div>
             ))}
           </div>
           <div className="w-[20%] h-full flex items-center gap-2">
