@@ -2,12 +2,12 @@
   {
     "id": 1,
     "title": "Watch",
-    "icon": ""
+    "icon": "CiStopwatch"
   },
   {
     "id": 2,
     "title": "Speaker",
-    "icon": ""
+    "icon": "PiSpeakerHighLight"
   },
   {
     "id": 3,
