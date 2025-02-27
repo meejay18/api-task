@@ -43,12 +43,12 @@ const Header = () => {
 
   return (
     <div>
-      <div className="w-100% h-[7rem]  flex justify-center items-center border border-b-[silver] ">
+      <div className="w-100% h-[7rem] sm:w-100% sm:h-[7rem]  flex justify-center items-center border border-b-[silver] ">
         <div className="w-[97%] h-[70%]  flex gap-[10px] items-center">
           <div className="w-[18%] h-[40%]   flex items-center">
             <img src={pic1} alt="" />
           </div>
-          <div className="w-[55%] h-[65%] border-[silver] border ml-[50px] flex items-center justify-between rounded-[3px] ">
+          <div className="hidden w-[55%] h-[65%] border-[silver] border ml-[50px] sm:flex items-center justify-between rounded-[3px] ">
             <input
               placeholder="What are you looking for?"
               className="w-[80%] h-[100%] flex  text-[15px] outline-none pl-[15px] "
@@ -88,7 +88,7 @@ const Header = () => {
               BROWSE ALL CATEGORIES
             </p>
           </div>
-          <div className="w-[45%] h-full  flex text-[15px] font-medium pl-[40px]  text-gray-800 items-center gap-[30px]">
+          <div className="w-[45%] hidden h-full  sm:flex text-[15px] font-medium pl-[40px]  text-gray-800 items-center gap-[30px]">
             {Nav.map((el) => (
               <div key={el.id}>
                 <Link to={el.url}>{el.title}</Link>
