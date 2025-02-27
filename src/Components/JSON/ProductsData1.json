@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "button_1": "On Sale",
+    "img": "https://cdn.prod.website-files.com/65f021a0664a58453bb57b1c/65f417b454d5ebab545bbb6a_Keyboard%202-p-800.png",
+    "product_name": "TNC Gaming Keyboard",
+    "rating": "⭐⭐⭐⭐⭐",
+    "price": "$ 120.00 USD",
+    "former_price": "$ 140.00 USD",
+    "button_2": "Add to Cart"
+  },
+  {
+    "id": "2",
+    "button_1": "On Sale",
+    "img": "https://cdn.prod.website-files.com/65f021a0664a58453bb57b1c/65fcfccc99a036b3da97f4ff_Black-Bluetooth-Speaker-PNG-Background-Image.png",
+    "product_name": "Digital Bluetooth Speaker",
+    "rating": "⭐⭐⭐⭐⭐",
+    "price": "$ 100.00 USD",
+    "former_price": "$ 120.00 USD",
+    "button_2": "Add to Cart"
+  },
+  {
+    "id": "3",
+    "button_1": "On Sale",
+    "img": "https://cdn.prod.website-files.com/65f021a0664a58453bb57b1c/65f3d3b0c5848f7714506ed5_PngItem_5999824-p-800.png",
+    "product_name": "TNC Airbuds",
+    "rating": "⭐⭐⭐⭐⭐",
+    "price": "$ 20.00 USD",
+    "former_price": "$ 30.00 USD",
+    "button_2": "Add to Cart"
+  },
+  {
+    "id": "3",
+    "button_1": "On Sale",
+    "img": "https://cdn.prod.website-files.com/65f021a0664a58453bb57b1c/65f28c4398582651c781ddd5_PngItem_6449224.png",
+    "product_name": "TNC Smart Watch",
+    "rating": "⭐⭐⭐⭐⭐",
+    "price": "$ 140.00 USD",
+    "former_price": "$ 150.00 USD",
+    "button_2": "Add to Cart"
+  }
+]

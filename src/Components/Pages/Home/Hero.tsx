@@ -47,10 +47,10 @@ const Hero = () => {
             </div>
           </div>
         </section>
-        <div className="w-[100%] mt-[60px] h-[20rem] bg-[#F8F9FF] flex justify-center items-center">
-          <div className="w-[95%] h-[65%] flex items-center justify-between ">
-            <div className="w-[32%] h-[90%]  border rounded-[5px] flex justify-center items-center ">
-              <div className="w-[95%] h-[80%]  flex">
+        <div className="md:w-[100%] md:mt-[60px] md:h-[20rem]   bg-[#F8F9FF] md:flex justify-center items-center">
+          <div className="md:w-[95%] md:h-[65%] grid w-[100%] grid-cols-1 gap-3 mt-[40px]  md:flex items-center justify-between ">
+            <div className="md:w-[32%] md:h-[90%] w-[100%]  border rounded-[5px] flex justify-center items-center ">
+              <div className="md:w-[95%] md:h-[80%] flex">
                 <div className="w-[40%] h-[90%] ">
                   <img src={pic3} alt="#" />
                 </div>
@@ -63,7 +63,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[32%] h-[90%] border  rounded-[5px] flex justify-center items-center ">
+            <div className="md:w-[32%] md:h-[90%] border w-[100%]  rounded-[5px] flex justify-center items-center ">
               <div className="w-[95%] h-[80%]   flex">
                 <div className="w-[40%] h-[90%] ">
                   <img src={pic4} alt="#" />
@@ -77,7 +77,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[32%] h-[90%] border rounded-[5px] flex justify-center items-center ">
+            <div className="md:w-[32%] md:h-[90%] border  w-[100%] rounded-[5px] flex justify-center items-center ">
               <div className="w-[95%] h-[80%]  flex">
                 <div className="w-[40%] h-[90%] ">
                   <img src={pic5} alt="#" />
