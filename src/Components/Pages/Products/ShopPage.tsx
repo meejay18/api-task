@@ -14,7 +14,7 @@ const ShopPage = () => {
     });
   };
 
-  const filteredProducts = products.filter((product: any) => {
+  const filteredProducts = products?.filter((product: any) => {
     const lowerCase = search.toLowerCase();
     return (
       product.title.toLowerCase().includes(lowerCase) ||
@@ -43,7 +43,7 @@ const ShopPage = () => {
         <div className="grid grid-cols-1 gap-[100px]  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredProducts.length > 0 ? (
             filteredProducts.map((el: any) => {
-              console.log("reading products", el.data);
+              // console.log("reading products", el.data);
 
               return (
                 <div
