@@ -1,5 +1,3 @@
-import React from "react";
-
 const ProductCard = ({ cardObj }: any) => {
   return (
     <div className="min-h-[330px] md:min-h-[470px] shadow-md rounded-md  ">
