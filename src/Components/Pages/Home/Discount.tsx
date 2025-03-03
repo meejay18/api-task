@@ -1,4 +1,3 @@
-import BuyNowObj from "../../JSON/BuyNowObj.json";
 import BuynowCard from "../../ProductsCards/BuynowCard";
 
 const Discount = () => {

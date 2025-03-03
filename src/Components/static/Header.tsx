@@ -32,12 +32,12 @@ const Header = () => {
     {
       id: "5",
       title: "Blog",
-      url: "",
+      url: "/blog",
     },
     {
       id: "6",
       title: "Contact",
-      url: "",
+      url: "/contact",
     },
   ];
 
